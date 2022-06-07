@@ -25,8 +25,7 @@
 - GET - /api/v1/tickets/t/:ticketId --- get ticket by ticketId
 - PATCH - /api/v1/tickets/t/:ticketId --- update ticket by ticketId
 - DELETE - /api/v1/tickets/t/:ticketId --- delete ticket by ticketId
-- POST - /api/v1/tickets/sell --- create a new ticket
-- POST - /api/v1/tickets/create?quantity=5 --- create multiple new ticket with quantity
-- POST - /api/v1/tickets/bulk --- create multiple new ticket
+- POST - /api/v1/tickets/create --- create one new ticket
+- POST - /api/v1/tickets/create?quantity=5 --- create multiple new ticket by quantity
 - GET - /api/v1/tickets/draw --- raffle draw to get winners
 - GET - /api/v1/tickets --- get all tickets

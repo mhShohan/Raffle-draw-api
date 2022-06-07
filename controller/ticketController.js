@@ -1,5 +1,4 @@
 const { MongoClient, ObjectId } = require('mongodb');
-const myDB = require('../db/db')
 const Ticket = require('../models/Ticket')
 const raffleDraw = require('../lib/raffleDraw')
 
@@ -138,6 +137,7 @@ handler.createMultipleTicket = async (req, res) => {
     }
 
 }
+
 handler.createMany = async (req, res) => {
     const { username, price } = req.body
     const quantity = Number(req.query.quantity) || 1
