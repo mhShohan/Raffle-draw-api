@@ -7,7 +7,7 @@ const {
     updateTicketByticketId,
     deleteTicketByUsername,
     deleteTicketByticketId,
-    raffleDraw,
+    raffleDraw, createMany,
     createTicket,
     createMultipleTicket
 } = require('../controller/ticketController')
@@ -17,6 +17,7 @@ router.route('/t/:ticketId').get(getTicketByticketId).patch(updateTicketByticket
 router.route('/u/:username').get(getTicketByUsername).patch(updateTicketByUsername).delete(deleteTicketByUsername)
 
 router.route('/sell').post(createTicket)
+router.route('/create').post(createMany)
 router.route('/bulk').post(createMultipleTicket)
 router.route('/draw').get(raffleDraw)
 router.get('', getAllTicket)

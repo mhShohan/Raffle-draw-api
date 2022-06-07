@@ -7,7 +7,7 @@ class Ticket {
      * @param {number} price 
      */
     constructor(username, price) {
-        this.id = shortid.generate()
+        // this.id = shortid.generate()
         this.username = username
         this.price = price
         this.createdAt = new Date()
