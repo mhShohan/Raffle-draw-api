@@ -10,12 +10,16 @@
 - Bulk buy (user can buy multiple ticket)
 - Raffle draw
 
+
+
 ## Ticket Model
 
 - ticketId
 - name
 - price
 - timeStamps
+
+
 
 ## Endpoints
 
