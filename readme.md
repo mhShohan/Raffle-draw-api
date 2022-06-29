@@ -2,13 +2,15 @@
 
 ## Psudo Code
 
-- create lottery ticket
-- update lottery ticket
-- delete lottery ticket
-- get all ticket
-- get ticket by id
-- bulk buy (user can buy multiple ticket)
-- raffle draw
+- Create lottery ticket
+- Update lottery ticket
+- Delete lottery ticket
+- Get all ticket
+- Get ticket by id
+- Bulk buy (user can buy multiple ticket)
+- Raffle draw
+
+
 
 ## Ticket Model
 
@@ -16,6 +18,8 @@
 - name
 - price
 - timeStamps
+
+
 
 ## Endpoints
 
