@@ -1,4 +1,4 @@
-const router = require('express').Router()
+const router = require('express').Router();
 const {
     getAllTicket,
     getTicketByUsername,
@@ -9,22 +9,22 @@ const {
     deleteTicketByticketId,
     raffleDraw,
     createMany,
-} = require('../controller/ticketController')
+} = require('../controller/ticketController');
 
 router
     .route('/t/:ticketId')
     .get(getTicketByticketId)
     .patch(updateTicketByticketId)
-    .delete(deleteTicketByticketId)
+    .delete(deleteTicketByticketId);
 
 router
     .route('/u/:username')
     .get(getTicketByUsername)
     .patch(updateTicketByUsername)
-    .delete(deleteTicketByUsername)
+    .delete(deleteTicketByUsername);
 
-router.route('/sell').post(createMany)
-router.route('/draw').get(raffleDraw)
-router.get('', getAllTicket)
+router.route('/sell').post(createMany);
+router.route('/draw').get(raffleDraw);
+router.get('', getAllTicket);
 
 module.exports = router;
